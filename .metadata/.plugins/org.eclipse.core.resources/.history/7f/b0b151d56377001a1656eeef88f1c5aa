@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+
+
+{{> /include/header}}
+
+
+
+</head>
+<body>
+
+
+
+{{> /include/navigation}}
+
+
+
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container">
+		<form action="/users" method="post">
+			<div class="form-group">
+				<label for="userId">userID</label> <input type="text"
+					class="form-control" name="userId" placeholder="userId">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					class="form-control" name="password" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="name">Name</label> <input type="text"
+					class="form-control" name="name" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<label for="name">Email</label> <input type="email"
+					class="form-control" name="email" placeholder="Email">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+			<div class="clearfix" />
+			
+		</form>
+	</div>
+
+
+
+{{> /include/footer}}
+
+	
+</body>
+</html>
+
+

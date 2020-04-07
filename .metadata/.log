@@ -1,0 +1,122 @@
+!SESSION 2020-04-06 13:25:55.665 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\JIMIN CHOI\Desktop\Shit\workspace\.metadata\.bak_0.log
+Created Time: 2020-04-07 16:10:44.492
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.494
+!MESSAGE Boot LS startup time from start to initialized: 6235ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.554
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zhWPCsgPisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.555
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.556
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.561
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.562
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.563
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.564
+!MESSAGE subscribing to classpath changes: sts4.classpath.zhWPCsgP isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.565
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.566
+!MESSAGE subsribers = {sts4.classpath.zhWPCsgP=Send Classpath Notifications(4902)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.567
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.568
+!MESSAGE Preparing classpath changed notification my-slipp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.569
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.570
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.571
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zhWPCsgP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.660
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.685
+!MESSAGE buffering callback sts4.classpath.zhWPCsgP my-slipp false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:44.687
+!MESSAGE executing callback sts4.classpath.zhWPCsgP 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:46.695
+!MESSAGE executing callback sts4.classpath.zhWPCsgP FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-04-07 16:10:46.697
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:47.033
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zhWPCsgP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:47.034
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zhWPCsgP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:47.035
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-07 16:10:47.039
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zhWPCsgP => OK
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2020-04-07 16:10:47.115
+!MESSAGE Error occured processing 'net.slipp.MySlippApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more

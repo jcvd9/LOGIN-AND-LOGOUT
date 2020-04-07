@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+
+
+{{> /include/header}}
+
+
+
+</head>
+<body>
+
+
+
+{{> /include/navigation}}
+
+
+
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container">
+	
+		{{#user}}
+		<form name="question"  method="post" action="/users/{{id}}">
+			
+			
+			<div class="form-group">
+				<label for="userId">userID</label> <input type="text"
+					class="form-control" name="userId" placeholder="userId" value="{{userId}}" >
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					class="form-control" name="password" placeholder="password">
+			</div>
+			<div class="form-group">
+				<label for="name">Name</label> <input type="text"
+					class="form-control" name="name" placeholder="name" value="{{name}}">
+			</div>
+			<div class="form-group">
+				<label for="name">Email</label> <input type="email"
+					class="form-control" name="email" placeholder="email" value="{{email}}">
+			</div>
+			<button type="submit" class="btn btn-default">Edit Personal Information</button>
+			<div class="clearfix" />
+		</form>
+		{{/user}}
+		
+	</div>
+
+
+
+
+		{{> /include/footer}}
+
+</body>
+</html>
+
+

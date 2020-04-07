@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+
+
+	<ul class="nav navbar-nav navbar-right">
+                <li>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://facebook.com" target="_blank"></a></li>
+                    </ul>
+                </li>
+                <li><a href="../user/list.html"><i class="glyphicon glyphicon-user"></i></a></li>
+            </ul>
+
+
+
+
+
+				<a href="../index.html" class="navbar-brand">Home</a>
+				
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse2">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse2">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="user/login.html" role="button">로그인</a></li>
+					<li><a href="user/form.html" role="button">Register</a></li>
+					<!--
+                <li><a href="#loginModal" role="button" data-toggle="modal">로그인</a></li>
+                <li><a href="#registerModal" role="button" data-toggle="modal">회원가입</a></li>
+                -->
+					<li><a href="#" role="button">로그아웃</a></li>
+					<li><a href="#" role="button">개인정보수정</a></li>
+				</ul>
+
+
+
+
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container">
+		<form action="/users" method="post">
+			<div class="form-group">
+				<label for="userId">userID</label> <input type="text"
+					class="form-control" name="userid" placeholder="userid">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					class="form-control" name="password" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="name">Name</label> <input type="text"
+					class="form-control" name="name" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<label for="name">Email</label> <input type="email"
+					class="form-control" name="email" placeholder="Email">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

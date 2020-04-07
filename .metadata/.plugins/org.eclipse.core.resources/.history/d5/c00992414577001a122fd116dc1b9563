@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+
+
+{{> /include/header}}
+
+
+
+</head>
+<body>
+
+
+
+{{> /include/navigation}}
+
+
+
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container">
+	
+		{{#user}}
+		<form name="question"  method="post" action="/users/update">
+		
+			
+			<div class="form-group">
+				<label for="userId">userID</label> <input type="text"
+					class="form-control" name="userId" placeholder="userId" value="{{userId}}" >
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label> <input type="password"
+					class="form-control" name="password" placeholder="password">
+			</div>
+			<div class="form-group">
+				<label for="name">Name</label> <input type="text"
+					class="form-control" name="name" placeholder="name" value="{{name}}">
+			</div>
+			<div class="form-group">
+				<label for="name">Email</label> <input type="email"
+					class="form-control" name="email" placeholder="email" value="{{email}}">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+			<div class="clearfix" />
+		</form>
+		{{/user}}
+		
+	</div>
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
